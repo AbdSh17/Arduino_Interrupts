@@ -130,3 +130,11 @@ Arduino has three main ports
 
 ### Functions:
 ![arduino_ports](./img/img_13.png)
+
+### 1- TCNT1:
+Timer1 Current value (can be used for any time aswell)
+
+### 2- TCCR1A and TCCR1B:
+is for the mode, they are too complicated, to simplify just look at 
+![timer1 & timer2 section](#Timer1-&-Timer0)
+
