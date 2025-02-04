@@ -133,8 +133,18 @@ Arduino has three main ports
 
 ### 1- TCNT1:
 Timer1 Current value (can be used for any time aswell)
+A register that stores the current count value of Timer1.
+Continuously increments (or decrements in some modes).
+Gets reset automatically in CTC mode when it matches OCR1A
 
-### 2- TCCR1A and TCCR1B:
+### 2- WGM12 (CTC mode):
+-  timer mode where the counter resets to 0 when it reaches a compare match value.
+-  Enabled by setting WGM12 = 1 in TCCR1B
+- will use OCR1A: A register that stores the value at which Timer1 resets in CTC mode.
+- EX: OCR1A = 32 * 10 ^ 6
+In CTC mode, the timer doesn't actually count to OCR1A in one cycle. Instead, it counts multiple smaller cycles before reaching OCR1A.
+
+### 3- TCCR1A and TCCR1B:
 is for the mode, they are too complicated, to simplify just look at 
 ![timer1 & timer2 section](#Timer1-&-Timer0)
 
