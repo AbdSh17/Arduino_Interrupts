@@ -4,6 +4,7 @@
 - [Hardware Interrupt](#Hardware-Interrupt)
 - [None Hardware Interrupt intro](#None-Hardware-Interrupt-intro)
 - [None Hardware Interrupt Code](#None-Hardware-Interrupt-Code).
+- [Timer Interrupt](#Timer-Interrupt).
 
 ## Hardware Interrupt
 
@@ -24,7 +25,7 @@ you can attach the interrupt using the following
 2- `digitalPinToInterrupt(PinNO.)` <br/>
 to give the exact port based on the pin
 
-#### EX): 
+#### EX: 
 `attachInterrupt(digitalPinToInterrupt(2), light, FALLING);`
 </span>
 
@@ -108,3 +109,24 @@ Arduino has three main ports
 
 ### 4- Change interrupt flag
 ![arduino_ports](./img/img_9.png)
+
+---
+
+
+## Timer Interrupt
+
+#### Arduino UNO has 3 Timers
+![arduino_ports](./img/img_10.png)
+
+### Clock:
+- **speed:** 16 MHz CLOCK
+- **prescaller:** 1, 8, 64, 256, 1024
+
+### Timer1 & Timer0
+![arduino_ports](./img/img_11.png)
+
+### Timer2
+![arduino_ports](./img/img_12.png)
+
+### Functions:
+![arduino_ports](./img/img_13.png)
