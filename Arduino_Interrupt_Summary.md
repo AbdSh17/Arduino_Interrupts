@@ -54,6 +54,7 @@ Polling is when the microcontroller constantly checks the state of a pin inside 
 The **Arduino Uno** has a feature called **Pin Change Interrupts (PCI)** that allows **any digital pin** to trigger an interrupt, but it's handled differently from **hardware interrupts**.
 
 #### How It Works
+- Note that it's working on both edges, so when connecting with a button for example you the ISR function will be entered twice, to solve it add an if statment 
 - Instead of **dedicated** hardware interrupts for each pin (like pins 2 & 3), PCI uses **interrupt groups**.
 - A group of pins (e.g., D0–D7) share a single interrupt **vector**.
 - When **any** pin in that group changes, the program must check which one triggered the interrupt.
