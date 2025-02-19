@@ -146,5 +146,5 @@ In CTC mode, the timer doesn't actually count to OCR1A in one cycle. Instead, it
 
 ### 3- TCCR1A and TCCR1B:
 is for the mode, they are too complicated, to simplify just look at 
-![timer1 & timer2 section](#Timer1-&-Timer0)
+[timer1 & timer2 section](#Timer1-&-Timer0)
 
