@@ -66,7 +66,7 @@ The **Arduino Uno** has a feature called **Pin Change Interrupts (PCI)** that al
 - Still faster than polling, but **not as instant** as a true hardware interrupt.
 
 
-### 3. Timer-Based Software Interrupts
+## 3. Timer-Based Software Interrupts
 If a precise timing-based action is needed, **timers** can be used to periodically check inputs without relying on hardware interrupts.
 
 #### How It Works
